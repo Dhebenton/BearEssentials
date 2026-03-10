@@ -1,0 +1,169 @@
+.loading-screen {
+     position: fixed;
+     z-index: 100;
+     width: 100%;
+     height: 100vh;
+     left: 0;
+     top: 0;
+     background-color: #FAF1E1;
+}
+
+.loading-screen .camera {
+     height: 50%;
+     max-width: 32%;
+     position: absolute;
+     left: 0;
+     object-fit: cover;
+     object-position: center;
+     top: 0;
+}
+
+.ls-polaroid-photo-wrap {
+     height: var(--img-height);
+     width: 355px;
+     position: absolute;
+}
+
+.ls-polaroid-photo-wrap video,
+.ls-polaroid-photo-wrap img {
+     border-radius: 1px;
+     object-fit: cover;
+     z-index: 1;
+     position: relative;
+     width: 100%;
+     height: 100%;
+}
+
+.ls-polaroid-photo-background {
+     position: absolute;
+     left: -14px;
+     border-radius: 2px;
+     box-shadow: 0px 0px 0px 0.8px rgba(0, 0, 0, 3%), 0px 0px 9px 0px rgba(0, 0, 0, 5%);
+     top: -14px;
+     right: -14px;
+     padding: 0 14px;
+     background-color: #FAFAFA;
+     padding-top: calc(100% + 14px);
+}
+
+.ls-polaroid-photo-background span {
+     margin: 22px 0;
+     font-size: 19px;
+     font-family: 'Patrick Hand';
+     color: #352E2B;
+     line-height: 1;
+}
+
+
+:root {
+     --img-height: 365px;
+}
+
+/* ORGANISE */
+
+body,html {
+     background-color: #FDFAF7;
+     height: 200vh;
+}
+
+.f-row {
+     display: flex;
+     align-items: center;
+}
+
+.j-c {
+     justify-content: center;
+}
+
+.a-f-e {
+     align-items: flex-end;
+}
+
+.j-s-b {
+     justify-content: space-between;
+}
+
+.a-f-s {
+     align-items: flex-start;
+}
+
+.loading-indicator {
+     position: absolute;
+     bottom: 32px !important;
+     font-size: 24px;
+     color: #1F1814;
+     font-variation-settings: 'wght' 600;
+     position: absolute;
+}
+
+.hero-waves {
+     background-image: url(/assets/hero-waves.png);
+     position: absolute;
+     bottom: 1%;
+     width: 100%;
+     z-index: 101;
+     aspect-ratio: 192 / 17 ;
+     transform: translateY(120%);
+     background-size: 100% 100%;
+}
+
+:root {
+     --container: 160px 11%;
+}
+
+.container {
+     padding: var(--container);
+}
+
+h6 {
+     font-size: 20px;
+     font-variation-settings: 'wght' 800;
+}
+
+.g22 {
+     gap: var(--g22);
+}
+
+main {
+     height: 100vh;
+}
+
+main video {
+     height: 95%;
+     object-fit: cover;
+     width: 100%;
+     object-fit: cover;
+     position: absolute;
+}
+
+main .background-blur {
+     background: linear-gradient(-90deg, rgba(0, 0, 0, 2%) 0%, rgba(0, 0, 0, 94%) 100%);
+     height: 99%;
+     bottom: 1%;
+     width: 100%;
+     position: absolute;
+     opacity: 0;
+     z-index: 100;
+}
+
+main .background-blur .blur {
+     width: 35%;
+     height: 100%;
+}
+
+.product-card {
+     width: 270px;
+}
+
+.product-card .product-image {
+     position: relative;
+}
+
+.product-card .product-image img {
+     border-radius: 5px;
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     object-fit: ;
+}
